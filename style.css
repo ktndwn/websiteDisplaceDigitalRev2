@@ -354,6 +354,11 @@ body {
 }
 
 @media (max-width:450px) {
+
+    #logo {
+        padding: 20px;
+    }
+    
     #sidebar {
         margin: auto;
         width: 250px;
