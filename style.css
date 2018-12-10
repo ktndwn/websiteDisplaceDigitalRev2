@@ -95,6 +95,11 @@ body {
     100% {width: 350px;}
 }
 
+@keyframes changeheightmini {
+    0% {width:0;}
+    100% {width: 300px;}
+}
+
 #display img {
     width: 900px;
     animation-name: changeheight;
@@ -351,7 +356,7 @@ body {
 @media (max-width:450px) {
     #sidebar {
         margin: auto;
-        width: 350px;
+        width: 250px;
         padding: 20px;
         position: static;
     }
@@ -359,7 +364,12 @@ body {
     #main {
         margin: auto;
         padding: 20px;
-        width: 350px;
+        width: 250px;
+    }
+
+    #display img {
+        width: 300px;
+        animation-name: changeheightmini;
     }
 
 }
