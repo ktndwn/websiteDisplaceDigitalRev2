@@ -7,6 +7,11 @@
     background-color: #222;
 }
 
+a {
+    text-decoration: none;
+    background: none;
+}
+
 body {
     height: 100%;
 }
@@ -15,6 +20,7 @@ body {
     position: fixed;
     padding-left: 20%;
     width: 300px; 
+    transition: .3s all ease-in-out;
 }
 
 #logo {
@@ -45,25 +51,20 @@ body {
 
 .link {
     color: #DDD;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 
 .triggered {
     cursor: pointer;
     color: #ff7500;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .link:hover {
     cursor: pointer;
-    transition: .2s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
-
-
-
-
-
 
 
 
@@ -76,11 +77,41 @@ body {
     padding-top: 309px;
     padding-left: 40%;
     width: 900px;
+    transition: .3s all ease-in-out;
 }
 
-#content {
-    text-align: left;
+@keyframes changeheight {
+    0% {width:0;}
+    100% {width: 900px;}
 }
+
+@keyframes changeheightmed {
+    0% {width:0;}
+    100% {width: 500px;}
+}
+
+@keyframes changeheightsmall {
+    0% {width:0;}
+    100% {width: 350px;}
+}
+
+#display img {
+    width: 900px;
+    animation-name: changeheight;
+    animation-duration: 1s;
+}
+
+#display:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 #design {
@@ -91,22 +122,229 @@ body {
     padding: 0px 0px; 
 }
 
+.images {
+    text-align: left;
+    width: 250px;
+    height: 400px;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+}
+
+.images:hover {
+    cursor: pointer;
+}
+
+#design1 {
+    background: url(assets/design/hyperledger1.png) no-repeat center;
+    background-size: cover;
+}
+
+#design2 {
+    background: url(assets/design/synthwave.png) no-repeat center;
+    background-size: cover;
+}
+
+#design3 {
+    background: url(assets/design/missioncollective.png) no-repeat center;
+    background-size: cover;
+}
+
+#design4 {
+    background: url(assets/design/jupiter1.png) no-repeat center;
+    background-size: cover;
+}
+
+#design5 {
+    background: url(assets/design/shoprite1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#design6 {
+    background: url(assets/design/ethereum.png) no-repeat center;
+    background-size: cover;
+}
+
+#design7 {
+    background: url(assets/design/particle.png) no-repeat center;
+    background-size: cover;
+}
+
+#design8 {
+    background: url(assets/design/bc1.png) no-repeat center;
+    background-size: cover;
+}
+
+#design9 {
+    background: url(assets/design/spacex.PNG) no-repeat center;
+    background-size: cover;
+}
+
+.captions {
+    color: rgba(221, 221, 221, 0);
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 5px;
+    transform: translateY(-50px);
+    background: rgba(255,80,0,0);
+    transition: .3s all ease-in-out;
+}
+
+.captions p {
+    color: rgba(221, 221, 221, 0);
+    background: rgba(255,80,0,0);
+    font-size: 15px;
+}
+
+.images:hover .captions{
+    padding-top: 220px;
+    padding-bottom: 220px;
+    color: rgba(221, 221, 221, 1);
+    background: rgba(255,80,0,1);
+    transition: .3s all ease-in-out;
+}
+
+.images:hover .captions p{
+    color: rgba(221, 221, 221, 1);
+    background: rgba(255,80,0,1);
+    transition: .3s all ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #motion {
     border-top: 10px solid #FF5000;
     padding: 20px 0px;   
 }
 
 
-#code {
-    border-top: 10px solid #FF5000;
-    padding: 20px 0px;   
+
+#vimeo iframe {
+    width: 888px;
+    transition: .3s all ease-in-out;
 }
 
+
+
+
+
+
+
+
 #self {
+    text-align: left;
     border-top: 10px solid #FF5000;
     border-bottom: 10px solid #FF5000;
     padding: 20px 0px;
-    margin-bottom: 309px;  
+    margin-bottom: 1000px;  
+}
+
+#contact {
+    color: #FF7500;
+}
+
+#self img {
+    width: 50px;
+    background: none;
+    filter: drop-shadow(0 0 10px rgba(221,221,221,0));
+    transition: .3s all ease-in-out;
+}
+
+#self img:hover {
+    filter: drop-shadow(0 0 10px rgba(221,221,221,1));
+    background: none;
+    transition: .3s all ease-in-out;
+}
+
+
+
+
+@media (max-width:1700px) {
+    #sidebar {
+        padding-left: 10%;
+    }
+
+    #main {
+        padding-left: 45%;
+        width: 500px;
+    }
+
+    #display img {
+        width: 500px;
+        animation-name: changeheightmed;
+    }
+
+    .images {
+        width: 150px;
+        height: 240px;
+    }
+
+    #vimeo iframe {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:950px) {
+    #sidebar {
+        margin: auto;
+        width: 375px;
+        padding: 20px;
+        position: static;
+    }
+
+    #main {
+        margin: auto;
+        padding: 20px;
+        width: 375px;
+    }
+
+    #display img {
+        margin: auto;
+        width: 350px;
+        animation-name: changeheightsmall;
+    }
+
+    .images {
+        width: 250px;
+        height: 400px;
+    }
+
 }
 
 
@@ -114,46 +352,3 @@ body {
 
 
 
-
-.images {
-    width: 250px;
-    height: 400px;
-    margin: 20px 0;
-    overflow: hidden;
-}
-
-.images p {
-    position:absolute;
-}
-
-.images p img {
-    position: relative;
-}
-
-
-
-
-.images img {
-    position: relative;
-    left: -90%;
-    transform: translateX(-31.5%);
-    margin: auto;
-    height: 400px;
-    filter: blur(0px);
-    transition: .5s all ease-in-out;
-}
-
-.images:hover img {
-    transition: .5s all ease-in-out;
-}
-
-
-
-
-
-
-
-
-#vimeo {
-    width: 100%;
-}

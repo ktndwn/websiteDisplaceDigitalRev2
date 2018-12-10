@@ -7,18 +7,17 @@ const offset = 309
 
 let designLink = document.getElementById('design-link')
 let motionLink = document.getElementById('motion-link')
-let codeLink = document.getElementById('code-link')
 let selfLink = document.getElementById('self-link')
 
 let design = document.getElementById('design')
 let motion = document.getElementById('motion')
-let code = document.getElementById('code')
 let self = document.getElementById('self')
 
 let designScroll = design.offsetTop - offset
 let motionScroll = motion.offsetTop - offset
-let codeScroll = code.offsetTop - offset
 let selfScroll = self.offsetTop - offset
+
+
 
 
 
@@ -34,13 +33,6 @@ motionLink.addEventListener('click', scrollToMotion => {
     let motionScroll = motion.offsetTop - offset
     window.scroll ({
         top: motionScroll,
-        behavior: 'smooth'
-    })
-})
-codeLink.addEventListener('click', scrollToCode => {
-    let codeScroll = code.offsetTop - offset
-    window.scroll ({
-        top: codeScroll,
         behavior: 'smooth'
     })
 })
@@ -60,7 +52,6 @@ selfLink.addEventListener('click', scrollToAbout => {
 let linkColorCheck = () => {
     let designScroll = design.offsetTop - offset
     let motionScroll = motion.offsetTop - offset
-    let codeScroll = code.offsetTop - offset
     let selfScroll = self.offsetTop - offset
 
     if (designScroll <= window.scrollY && window.scrollY < motionScroll) {
@@ -70,20 +61,14 @@ let linkColorCheck = () => {
         designLink.classList.add('link')
         designLink.classList.remove('triggered')
     }
-    if (motionScroll <= window.scrollY && window.scrollY < codeScroll) {
+    if (motionScroll <= window.scrollY && window.scrollY < selfScroll) {
         motionLink.classList.add('triggered')
         motionLink.classList.remove('link')
     } else {
         motionLink.classList.add('link')
         motionLink.classList.remove('triggered')
     }
-    if (codeScroll <= window.scrollY && window.scrollY < selfScroll) {
-        codeLink.classList.add('triggered')
-        codeLink.classList.remove('link')
-    } else {
-        codeLink.classList.add('link')
-        codeLink.classList.remove('triggered')
-    }
+    
     if (selfScroll <= window.scrollY) {
         selfLink.classList.add('triggered')
         selfLink.classList.remove('link')
@@ -96,6 +81,201 @@ let linkColorCheck = () => {
 window.addEventListener('scroll', linkColorCheck)
 
 linkColorCheck()
+
+
+
+
+
+let designOneLink = document.getElementById('design1')
+let designOneDisplay = '<div id="display"><img src="assets/design/hyperledger1.png" alt=""></img><br><img src="assets/design/hyperledger2.png" alt=""></img><br><img src="assets/design/hyperledger3.png" alt=""></img><br><img src="assets/design/hyperledger4.png" alt=""></img></div>'
+
+designOneLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designOneDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designOneDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designTwoLink = document.getElementById('design2')
+let designTwoDisplay = '<div id="display"><img src="assets/design/synthwave.png" alt=""></img></div>'
+
+designTwoLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designTwoDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designTwoDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designThreeLink = document.getElementById('design3')
+let designThreeDisplay = '<div id="display"><img src="assets/design/missioncollective.png" alt=""></img></div>'
+
+designThreeLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designThreeDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designThreeDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designFourLink = document.getElementById('design4')
+let designFourDisplay = '<div id="display"><img src="assets/design/jupiter1.png" alt=""></img><br><img src="assets/design/jupiter2.png" alt=""></img><br><img src="assets/design/jupiter3.png" alt=""></img><br><img src="assets/design/jupiter4.png" alt=""></img></div>'
+
+designFourLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designFourDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designFourDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designFiveLink = document.getElementById('design5')
+let designFiveDisplay = '<div id="display"><img src="assets/design/shoprite1.jpg" alt=""></img><br><img src="assets/design/shoprite2.jpg" alt=""></img><br><img src="assets/design/shoprite3.jpg" alt=""></img></div>'
+
+designFiveLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designFiveDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designFiveDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designSixLink = document.getElementById('design6')
+let designSixDisplay = '<div id="display"><img src="assets/design/ethereum.png" alt=""></img></div>'
+
+designSixLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designSixDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designSixDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designSevenLink = document.getElementById('design7')
+let designSevenDisplay = '<div id="display"><img src="assets/design/particle.png" alt=""></div>' 
+
+designSevenLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designSevenDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designSevenDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+let designEightLink = document.getElementById('design8')
+let designEightDisplay = '<div id="display"><img src="assets/design/bc1.png" alt=""></img><br><img src="assets/design/bc2.png" alt=""></img></div>' 
+
+designEightLink.addEventListener('click', () => {
+    if (document.getElementById('display') == undefined) {
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designEightDisplay)
+    } else {
+        document.getElementById('content').removeChild(display)
+        document.getElementById('content').insertAdjacentHTML('afterbegin', designEightDisplay)
+    }
+    window.scroll ({
+        top: 250,
+        behavior: 'smooth'
+    })
+    document.getElementById('display').addEventListener('click', ()=> {
+        document.getElementById('content').removeChild(display)
+        window.scroll ({
+            top: designScroll,
+            behavior: 'smooth'
+        })
+    })
+})
+
+
+//
+// design 9 is a direct link
+//
+
+
 
 
 
