@@ -97,7 +97,7 @@ body {
 
 @keyframes changeheightmini {
     0% {width:0;}
-    100% {width: 300px;}
+    100% {width: 250px;}
 }
 
 #display img {
@@ -368,7 +368,7 @@ body {
     }
 
     #display img {
-        width: 300px;
+        width: 250px;
         animation-name: changeheightmini;
     }
 
