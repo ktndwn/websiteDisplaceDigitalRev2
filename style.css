@@ -348,6 +348,22 @@ body {
 
 }
 
+@media (max-width:450px) {
+    #sidebar {
+        margin: auto;
+        width: 350px;
+        padding: 20px;
+        position: static;
+    }
+
+    #main {
+        margin: auto;
+        padding: 20px;
+        width: 350px;
+    }
+
+}
+
 
 
 
