@@ -87,7 +87,7 @@ linkColorCheck()
 
 
 let designOneLink = document.getElementById('design1')
-let designOneDisplay = '<div id="display"><img src="assets/design/hyperledger1.png" alt=""></img><br><img src="assets/design/hyperledger2.png" alt=""></img><br><img src="assets/design/hyperledger3.png" alt=""></img><br><img src="assets/design/hyperledger4.png" alt=""></img></div>'
+let designOneDisplay = '<div id="display"><img src="assets/design/hyperledger1.jpg" alt=""></img><br><img src="assets/design/hyperledger2.jpg" alt=""></img><br><img src="assets/design/hyperledger3.jpg" alt=""></img><br><img src="assets/design/hyperledger4.jpg" alt=""></img></div>'
 
 designOneLink.addEventListener('click', () => {
     if (document.getElementById('display') == undefined) {
@@ -110,7 +110,7 @@ designOneLink.addEventListener('click', () => {
 })
 
 let designTwoLink = document.getElementById('design2')
-let designTwoDisplay = '<div id="display"><img src="assets/design/synthwave.png" alt=""></img></div>'
+let designTwoDisplay = '<div id="display"><img src="assets/design/synthwave.jpg" alt=""></img></div>'
 
 designTwoLink.addEventListener('click', () => {
     if (document.getElementById('display') == undefined) {
@@ -202,7 +202,7 @@ designFiveLink.addEventListener('click', () => {
 })
 
 let designSixLink = document.getElementById('design6')
-let designSixDisplay = '<div id="display"><img src="assets/design/ethereum.png" alt=""></img></div>'
+let designSixDisplay = '<div id="display"><img src="assets/design/ethereum.jpg" alt=""></img></div>'
 
 designSixLink.addEventListener('click', () => {
     if (document.getElementById('display') == undefined) {
@@ -225,7 +225,7 @@ designSixLink.addEventListener('click', () => {
 })
 
 let designSevenLink = document.getElementById('design7')
-let designSevenDisplay = '<div id="display"><img src="assets/design/particle.png" alt=""></div>' 
+let designSevenDisplay = '<div id="display"><img src="assets/design/particle.jpg" alt=""></div>' 
 
 designSevenLink.addEventListener('click', () => {
     if (document.getElementById('display') == undefined) {
@@ -248,7 +248,7 @@ designSevenLink.addEventListener('click', () => {
 })
 
 let designEightLink = document.getElementById('design8')
-let designEightDisplay = '<div id="display"><img src="assets/design/bc1.png" alt=""></img><br><img src="assets/design/bc2.png" alt=""></img></div>' 
+let designEightDisplay = '<div id="display"><img src="assets/design/bc1.jpg" alt=""></img><br><img src="assets/design/bc2.jpg" alt=""></img></div>' 
 
 designEightLink.addEventListener('click', () => {
     if (document.getElementById('display') == undefined) {

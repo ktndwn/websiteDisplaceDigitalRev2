@@ -141,12 +141,12 @@ body {
 }
 
 #design1 {
-    background: url(assets/design/hyperledger1.png) no-repeat center;
+    background: url(assets/design/hyperledger1.jpg) no-repeat center;
     background-size: cover;
 }
 
 #design2 {
-    background: url(assets/design/synthwave.png) no-repeat center;
+    background: url(assets/design/synthwave.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -166,17 +166,17 @@ body {
 }
 
 #design6 {
-    background: url(assets/design/ethereum.png) no-repeat center;
+    background: url(assets/design/ethereum.jpg) no-repeat center;
     background-size: cover;
 }
 
 #design7 {
-    background: url(assets/design/particle.png) no-repeat center;
+    background: url(assets/design/particle.jpg) no-repeat center;
     background-size: cover;
 }
 
 #design8 {
-    background: url(assets/design/bc1.png) no-repeat center;
+    background: url(assets/design/bc1.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -358,7 +358,8 @@ body {
     #logo {
         padding: 20px;
     }
-    
+
+
     #sidebar {
         margin: auto;
         width: 250px;
