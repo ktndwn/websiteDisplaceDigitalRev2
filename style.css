@@ -185,6 +185,21 @@ body {
     background-size: cover;
 }
 
+#design10 {
+    background: url(assets/design/usgs.PNG) no-repeat center;
+    background-size: cover;
+}
+
+#design11 {
+    background: url(assets/design/workouttracker.png) no-repeat center;
+    background-size: cover;
+}
+
+#design12 {
+    background: url(assets/design/dd.png) no-repeat center;
+    background-size: cover;
+}
+
 .captions {
     color: rgba(221, 221, 221, 0);
     font-weight: 700;
