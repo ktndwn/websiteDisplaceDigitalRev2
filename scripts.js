@@ -85,7 +85,6 @@ linkColorCheck()
 
 
 
-
 let designOneLink = document.getElementById('design1')
 let designOneDisplay = '<div id="display"><img src="assets/design/hyperledger1.jpg" alt=""></img><br><img src="assets/design/hyperledger2.jpg" alt=""></img><br><img src="assets/design/hyperledger3.jpg" alt=""></img><br><img src="assets/design/hyperledger4.jpg" alt=""></img></div>'
 
@@ -98,7 +97,7 @@ designOneLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -121,7 +120,7 @@ designTwoLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -144,7 +143,7 @@ designThreeLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -167,7 +166,7 @@ designFourLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -190,7 +189,7 @@ designFiveLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -213,7 +212,7 @@ designSixLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -236,7 +235,7 @@ designSevenLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -259,7 +258,7 @@ designEightLink.addEventListener('click', () => {
     }
     window.scroll ({
         top: 250,
-        behavior: 'smooth'
+        behavior: 'auto'
     })
     document.getElementById('display').addEventListener('click', ()=> {
         document.getElementById('content').removeChild(display)
@@ -269,6 +268,8 @@ designEightLink.addEventListener('click', () => {
         })
     })
 })
+
+
 
 
 //
